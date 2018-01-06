@@ -1,0 +1,30 @@
+{
+    "name": "app/app-skeleton",
+    "description": "Skeleton application",
+    "require": {
+        "app/api-module": "^0.0.3"
+    },
+    "require-dev": {
+        "zendframework/zend-developer-tools": "^1.1",
+        "zfcampus/zf-apigility-admin": "^1.5.9"
+    },
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "development-disable": "zf-development-mode disable",
+        "development-enable": "zf-development-mode enable",
+        "development-status": "zf-development-mode status",
+        "server": "php -S 0.0.0.0:8080 -t public/ public/index.php",
+        "test": "phpunit"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/LukaszM07/api-module.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/LukaszM07/app-domain.git"
+        }
+    ]
+}
